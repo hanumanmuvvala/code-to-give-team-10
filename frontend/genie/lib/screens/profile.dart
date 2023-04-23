@@ -218,6 +218,36 @@ class Profile extends StatelessWidget {
                             ),
                             child: Center(
                               child: Text(
+                                'TALK TO A COORDINATOR',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w500,
+                                  color: whiteColor,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const ApplicationStatus(),
+                            ),
+                          );
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(40, 0, 40, 10),
+                          child: Container(
+                            height: 50,
+                            decoration: BoxDecoration(
+                              color: lightBlueColor,
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: Center(
+                              child: Text(
                                 'REQUEST A WISH',
                                 style: TextStyle(
                                   fontSize: 15,

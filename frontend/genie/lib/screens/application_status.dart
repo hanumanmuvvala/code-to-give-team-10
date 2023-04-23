@@ -28,9 +28,28 @@ class _ApplicationStatusState extends State<ApplicationStatus> {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: TimelineTile(
-          isFirst: true,
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: Column(
+          children: [
+            TimelineTile(
+              isFirst: true,
+              endChild: Text(
+                "ROhan Bera",
+              ),
+            ),
+            TimelineTile(
+              endChild: Text("Bera"),
+            ),
+            TimelineTile(
+              endChild: Text("Bera"),
+            ),
+            TimelineTile(
+              endChild: Text("Bera"),
+            ),
+            TimelineTile(
+              endChild: Text("Bera"),
+            ),
+          ],
         ),
       ),
     );
