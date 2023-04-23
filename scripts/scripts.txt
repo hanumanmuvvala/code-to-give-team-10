@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS flask_app_db.channels;
+
+CREATE TABLE IF NOT EXISTS flask_app_db.channels (
+	channel_id int(10) NOT NULL AUTO_INCREMENT,
+	wish_maker varchar(50) NOT NULL,
+    wish_coordinator varchar(50) NOT NULL,
+    channel_name varchar(100) NOT NULL,
+	status varchar(10) NOT NULL,
+	PRIMARY KEY (channel_id)
+)ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+insert into flask_app_db.channels values(1,'hanuman','hanuman','my_channel','Active');
